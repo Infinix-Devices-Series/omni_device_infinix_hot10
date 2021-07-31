@@ -17,10 +17,16 @@
 
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
-$(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base.mk)
+$(call inherit-product-if-exists, $(SRC_TARGET_DIR)/product/embedded.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
+
+# Inherit from X682C device
+$(call inherit-product, device/infinix/X682C/device.mk)
 
 # Inherit some common Omni stuff.
 $(call inherit-product, vendor/omni/config/common.mk)
+$(call inherit-product, vendor/omni/config/gsm.mk)
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := X682C
@@ -28,12 +34,12 @@ PRODUCT_NAME := omni_X682C
 PRODUCT_BRAND := Infinix
 PRODUCT_MODEL := Infinix Hot 10
 PRODUCT_MANUFACTURER := infinix
-
-# PRODUCT_SHIPPING_API_LEVEL := 29
+PRODUCT_RELEASE_NAME := Infinix Hot 10
 
 # Dynamic Partition
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
+# Fastbootd
 PRODUCT_PACKAGES += \
     android.hardware.fastboot@1.0-impl-mock \
     android.hardware.fastboot@1.0-impl-mock.recovery
