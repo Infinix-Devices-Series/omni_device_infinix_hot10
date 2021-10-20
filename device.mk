@@ -15,4 +15,4 @@
 # limitations under the License.
 #
 
-LOCAL_PATH := device/infinix/X682C
+LOCAL_PATH := device/infinix/hot10

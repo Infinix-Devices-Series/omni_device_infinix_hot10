@@ -15,7 +15,7 @@
 # limitations under the License.
 #
 
-DEVICE_PATH := device/infinix/X682C
+DEVICE_PATH := device/infinix/hot10
 
 # For building with minimal manifest
 ALLOW_MISSING_DEPENDENCIES := true

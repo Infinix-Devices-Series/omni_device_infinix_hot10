@@ -16,6 +16,6 @@
 #
 
 PRODUCT_MAKEFILES := \
-     $(LOCAL_DIR)/omni_X682C.mk
+     $(LOCAL_DIR)/omni_hot10.mk
 
-COMMON_LUNCH_CHOICES := omni_X682C-eng
+COMMON_LUNCH_CHOICES := omni_hot10-eng

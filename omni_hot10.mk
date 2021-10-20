@@ -21,16 +21,16 @@ $(call inherit-product-if-exists, $(SRC_TARGET_DIR)/product/embedded.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 
-# Inherit from X682C device
-$(call inherit-product, device/infinix/X682C/device.mk)
+# Inherit from hot10 device
+$(call inherit-product, device/infinix/hot10/device.mk)
 
 # Inherit some common Omni stuff.
 $(call inherit-product, vendor/omni/config/common.mk)
 $(call inherit-product, vendor/omni/config/gsm.mk)
 
 # Device identifier. This must come after all inclusions
-PRODUCT_DEVICE := X682C
-PRODUCT_NAME := omni_X682C
+PRODUCT_DEVICE := hot10
+PRODUCT_NAME := omni_hot10
 PRODUCT_BRAND := Infinix
 PRODUCT_MODEL := Infinix Hot 10
 PRODUCT_MANUFACTURER := infinix
