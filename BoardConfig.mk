@@ -139,3 +139,15 @@ SEPOLICY_IGNORE_NEVERALLOWS := true
 SELINUX_IGNORE_NEVERALLOWS := true
 
 TW_DEVICE_VERSION := LayeardDevMod
+
+# SHRP Specific Stuff
+SHRP_PATH := device/infinix/hot10
+SHRP_MAINTAINER := xoo2001
+SHRP_DEVICE_CODE := hot10
+SHRP_REC_TYPE := Treble
+SHRP_DEVICE_TYPE := A_only
+SHRP_NOTCH := true
+SHRP_OTG := /usb_otg
+SHRP_INTERNAL := /sdcard
+SHRP_EXTERNAL := /external_sd
+
